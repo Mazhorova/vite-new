@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(230, 175, 175);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    margin: 25px;
+}
+table {
+    width: 400px;
+    background: rgb(231, 234, 238);
+    border: 1px solid black;
+}
+td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+tbody tr:nth-child(odd)  td:nth-child(odd){
+background: black;
+}
+tbody tr:nth-child(even)  td:nth-child(even){
+    background: rgb(228, 222, 222);
+    }
