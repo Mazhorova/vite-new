@@ -1,29 +1,364 @@
-body {
-    background-color: rgb(230, 175, 175);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
 }
-h1 {
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    background: rgb(170, 167, 167);
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 60px 58px 43px;
+}
+.menu_1, .menu_2 {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.menu_2 .menu__item {
+   margin-right: 30px;
+}
+.menu__item {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 6px;
+    border-bottom: 2px transparent solid;
+    transition: 0.2s;
+}
+.menu__item:hover, .menu__item.active {
+    border-bottom: 2px #3d2f31 solid;
+    color: #422b2f;
+}
+.item1 {
+    margin-right: 63px;
+}
+.item2 {
+    margin-right: 25px;
+}
+.item3 {
+    margin-right: 44px;
+    
+}
+.item4 {
+    margin-right: 46px;
+}
+.tesla_title {
     text-align: center;
-    margin: 25px;
+    background-image: url('/src/img/wepik-export-20231219174339FX3p.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1100px;
+    margin-bottom: 26px;
 }
-table {
-    width: 400px;
-    background: rgb(231, 234, 238);
-    border: 1px solid black;
+.tesla_title h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 110px;
+    color: aliceblue;
 }
-td {
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
+.tesla_title p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
 }
-tbody tr:nth-child(odd)  td:nth-child(odd){
-background: black;
+
+.tesla_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 37px;
 }
-tbody tr:nth-child(even)  td:nth-child(even){
-    background: rgb(228, 222, 222);
+.info_block {
+    display: flex;
+    align-items: center;
+    margin-right: 81px;
+}
+.info_block_img {
+    width: 46px;
+    margin-right: 14px;
+}
+.info_block_text1 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+}
+.info_block_text1 span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+.info_block_text2 {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+.test_drive {
+    cursor: pointer;
+    margin-left: 24px;
+    margin-right: 40px;
+    max-height: 22px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.test_drive img {
+    margin-right: 7px;
+}
+.order {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E51937;
+    border: 2px solid #E51937;
+    min-width: 160px;
+    min-height: 40px;
+    cursor: pointer;
+}
+.go_bottom {
+    text-align: center;
+    display: block;
+}
+@media (max-width: 768px) and (min-width: 376px) {
+    .container {
+        width: 768px; 
+    }
+    .menu__item {
+        display: none;
+    }
+    .tesla_title {
+        min-height: 435px;
+        background-size: contain;
+        background-position: center bottom;
+    }
+    .tesla_info {
+        flex-wrap: wrap;
+        margin-bottom: 63px;
+    }
+    nav {
+        margin: 24px 33px 94px 15px;
+    }
+    .tesla_title h1 {
+        font-size: 90px;
+        line-height: 110px;
+    }
+    .tesla_title p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .info_block {
+        margin-right: 65px;
+        margin-left: 65px;
+        margin-bottom: 56px;
+    }}
+    .info_block:nth-child(2) .info_block_img {
+        width: 38px;
+    }
+    .info_block_img {
+        width: 65px;
+    }
+    .info_block_text1 {
+        font-size: 50px;
+        line-height: 61px;
+        margin-bottom: 2px;
+    }
+    .info_block_text2 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .test_drive {
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 0px;
+        margin-right: 34px;
+    }
+    .test_drive img {
+        width: 30px;
+        height: 30px;
+    }
+    .order {
+        width: 220px;
+        height: 55px;
+        font-size: 16px;
+        line-height: 55px;
+        background: #E51937;
+        color: #fff;
+    }
+    .main {
+        margin-top: 37px;
+        /* min-height: 900px;   */
+        color: #fff;
+    }
+    .main__inner {
+        background-image: url(/src/img/56a0a98875675.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .left-section h2 {
+        margin-left: 80px;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 85px;
+        color: #E51937;
+    }
+    .right-section {
+        width: 440px;
+        background: #E51937;
+        padding: 51px 50px 63px 52px;
+    }
+    .main-top h3 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0;
+    }
+    .main-top p {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        margin: 0;
+        margin-top: 11px;
+        margin-bottom: 54px;
+    }
+    .features {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+    .features__img {
+        align-self: center;
+        margin-right: 19px;
+    
+    }
+    .features__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0;
+    }
+    .features__accent {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 43px;
+    }
+    .features__text {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        margin: 0;
+    }
+    .main-bottom {
+        margin-top: 131px;
+        display: flex;
+    }
+    .information {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-right: 22px;
+    }
+    .information a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .information img {
+        align-self: center;
+        margin-right: 5px;
+    }
+    .inverse__button {
+        color: #fff;
+        border-color: #fff;
+    }
+    @media (max-width: 768px) and (min-width: 376px) {
+        .main {
+            height: 100%;
+        }
+        .main__inner {
+            display: flex;
+            flex-direction: column;
+        }
+        .left-section {
+            width: 100%;
+            background-size: contain;
+            height: 500px;
+        }
+        .left-section h2 {
+            text-align: right;
+            margin: 0 58px 0 0;
+        }
+        .right-section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 55px 50px 50px 35px;
+        }
+        .main-top-inner {
+            display: flex;
+        }
+        .main-top {
+            width: 320px;
+            margin-right: 70px;
+        }
+        .features-box {
+            width: 280px;
+        }
+        .main-bottom {
+            margin-top: 0;
+            justify-content: center;
+        }
+    }
+    @media (max-width: 375px) {
+        .main {
+            min-height: 500px;
+        }
+        .right-section {
+            max-width: 375px;
+            background-image: url(../img/2013-tesla-model-s-cockpit.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 270px 36px 34px 22px;
+        }
+        .main__inner {
+            height: 337px;
+            flex-direction: column;
+        }
+        .left-section h2, .features-box, .main-bottom {
+            display: none;
+        }
+        .main-top p {
+            margin-bottom: 0;
+        }
     }
