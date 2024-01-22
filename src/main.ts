@@ -31,3 +31,4 @@ likeButtons.forEach((likeButton) => {
     likeButton.classList.toggle("card__btn--like");
   });
 });
+
