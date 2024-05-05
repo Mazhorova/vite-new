@@ -146,7 +146,7 @@ nav {
     display: block;
 }
 @media (max-width: 768px) and (min-width: 376px) {
-    .container {
+    .container{
         width: 768px; 
     }
     .menu__item {
@@ -398,7 +398,12 @@ nav {
         margin: 0 auto;
     }
     .text {
+        padding: 30px;
         text-align: center;
         font-size: 55px;
         
+    }
+
+    .audio {
+        margin: 10px;
     }
