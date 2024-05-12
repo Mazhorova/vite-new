@@ -5,16 +5,16 @@ export default {
     build: {
       rollupOptions: {
         input: {
+          
+          main: resolve(src, 'index.html'),
           // @ts-ignore
-          main: resolve(__dirname, 'index.html'),
+          a1: resolve(src, 'a1.html'),
           // @ts-ignore
-          a1: resolve(__dirname, 'a1.html'),
+          a2: resolve(src, 'a2.html'),
           // @ts-ignore
-          a2: resolve(__dirname, 'a2.html'),
+          a3: resolve(src, 'a3.html'),
           // @ts-ignore
-          a3: resolve(__dirname, 'a3.html'),
-          // @ts-ignore
-          a4: resolve(__dirname, 'a4.html'),
+          a4: resolve(src, 'a4.html'),
         }
       }
     }

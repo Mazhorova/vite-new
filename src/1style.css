@@ -135,6 +135,7 @@ wrap {
     gap: 1.5rem;
     justify-content: center;
     margin-top: 1rem;
+    
 }
 
 .card__price {
@@ -206,4 +207,10 @@ h2 {
     font-size: 2
     5px;
     
+}
+
+@media  screen (min-width: 480px) {
+    .cards {
+      padding-top: 190%; 
+    }
 }
