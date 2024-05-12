@@ -11,6 +11,10 @@ export default {
           a1: resolve(__dirname, 'a1.html'),
           // @ts-ignore
           a2: resolve(__dirname, 'a2.html'),
+          // @ts-ignore
+          a3: resolve(__dirname, 'a3.html'),
+          // @ts-ignore
+          a4: resolve(__dirname, 'a4.html'),
         }
       }
     }
