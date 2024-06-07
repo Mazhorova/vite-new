@@ -6,15 +6,15 @@ export default {
       rollupOptions: {
         input: {
           
-          main: resolve(src, 'index.html'),
+          main: resolve( 'index.html'),
           // @ts-ignore
-          a1: resolve(src, 'a1.html'),
+          a1: resolve('a1.html'),
           // @ts-ignore
-          a2: resolve(src, 'a2.html'),
+          a2: resolve('a2.html'),
           // @ts-ignore
-          a3: resolve(src, 'a3.html'),
+          a3: resolve('a3.html'),
           // @ts-ignore
-          a4: resolve(src, 'a4.html'),
+          a4: resolve('a4.html'),
         }
       }
     }

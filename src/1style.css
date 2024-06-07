@@ -5,8 +5,9 @@ body {
     animation: gradient 10s ease infinite;
     background-size: 400%;
     background: rgb(36, 31, 31);
+    min-height: 100vh;
 }
-@keyframes gradient {
+/* @keyframes gradient {
     0% {
         background-position: 0 50%;
     }
@@ -16,14 +17,15 @@ body {
     100% {
         background-position: 0% 50%;
     }
-}
-.header {
+} */
+/* .header {
     width: 100%;
     height: 70px;
     background-color: black;
     top: 0;
 }
 .nav {
+    max-width: 990px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,9 +38,70 @@ body {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    color: rgb(172, 186, 199);
+    
+} */
+
+
+header {
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(7, 6, 8) ;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 70px;
+  }
+  .navbar_first {
+    flex: 10;
+    padding: 10px 3%;
+    color: rgb(150, 138, 197);
+    text-shadow: 0px 0px 10px white;
+  }
+  .navbar {
+    margin: 0px;
+    padding: 10px;
+    flex: 1;
+    
+  }
+  
+  a {
+    scroll-behavior: smooth;
+    color: rgb(150, 138, 197);
     text-decoration: none;
-}
+  }
+  a:hover {
+    color:lightgrey;
+    transition: 1s;
+    text-shadow: 0px 0px 20px white;
+    /* background: rgb(255, 0, 0, .5); */
+    /* padding: 9px auto; */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container {
  display: grid;
   gap: 15px;
@@ -209,8 +272,3 @@ h2 {
     
 }
 
-@media  screen (min-width: 480px) {
-    .cards {
-      padding-top: 190%; 
-    }
-}
